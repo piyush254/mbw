@@ -50,8 +50,9 @@ header {
 
 .hero {
   border: 2px solid #fff;
-  /* box-sizing: border-box; */
-  background-image: url(./pexels-freestockpro-3036405.jpg);
+  box-sizing: border-box;
+  background-color: transparent;
+  /* background-image: url(./pexels-freestockpro-3036405.jpg); */
   box-sizing: cover;
   width: 100vw;
   height: 100vh;
@@ -659,4 +660,11 @@ footer h6{
   color: white;
   text-align: center;
   margin-top: 2.5%;
+}
+
+.hero video{
+  width: 99.80vw;
+  opacity: 0.9;
+  z-index: -1;
+  position: absolute;
 }
