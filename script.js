@@ -179,7 +179,7 @@ function storysectionMaking() {
   const story = [{},{},{}];
   story.forEach((item) => {
     storySection.innerHTML +=`<div class="storyClients">
-  <div class="aboutStory">IBW Tech far exceeded our expectations with their exceptional custom software development. Their expertise and dedication made us feel like truly valued partners. We experienced a remarkable return on investment within a short time.
+  <div class="aboutStory">MYW Tech far exceeded our expectations with their exceptional custom software development. Their expertise and dedication made us feel like truly valued partners. We experienced a remarkable return on investment within a short time.
     <div class="trangle" style=" border-left: 40px solid #f6f6f6;"></div>
   </div>
   <h3>Jodi Henderson</h3>
