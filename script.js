@@ -176,14 +176,44 @@ function movingCards() {
 
 function storysectionMaking() {
   let storySection = document.querySelector(".storySection");
-  const story = [{},{},{}];
+  const story = [
+    {
+      about:
+        "MBW Tech far exceeded our expectations with their exceptional custom software development. Their expertise and dedication made us feel like truly valued partners. We experienced a remarkable return on investment within a short time.",
+      author: "Jodi Henderson",
+      role: "Software Developer",
+    },
+    {
+      about:
+        "Partnering with MBW Tech was a game-changer for our startup. Their custom software solution transformed our vision into a global success story. The exceptional service and support we received made all the difference.",
+      author: "Hassan Ali",
+      role: " Software Developer",
+    },
+    {
+      about:
+        "MBW Tech empowered our SME to scale new heights. Their end-to-end product design and development services were instrumental in launching our innovative solution. We're grateful for their expertise and guidance throughout the journey.",
+      author: "Chris M",
+      role: "Software Developer",
+    },
+  ];
   story.forEach((item) => {
-    storySection.innerHTML +=`<div class="storyClients">
-  <div class="aboutStory">MYW Tech far exceeded our expectations with their exceptional custom software development. Their expertise and dedication made us feel like truly valued partners. We experienced a remarkable return on investment within a short time.
-    <div class="trangle" style=" border-left: 40px solid #f6f6f6;"></div>
-  </div>
-  <h3>Jodi Henderson</h3>
-  <h4>Software Developer</h4>
-</div>`;
+    storySection.innerHTML += ` <div class="storyClients">
+    <div class="aboutStory">
+      <div class="glassicon">
+        <i
+          class="fa-solid fa-glass-water"
+          style="color: #ff0000; font-size: 2rem"
+        ></i>
+        <i
+          class="fa-solid fa-glass-water"
+          style="color: #ff0000; font-size: 2rem"
+        ></i>
+      </div>
+      ${item.about}
+      <div class="trangle" style="border-left: 40px solid #f6f6f6"></div>
+    </div>
+    <h3>${item.author}</h3>
+    <h4>${item.role}</h4>
+  </div>`;
   });
 }
