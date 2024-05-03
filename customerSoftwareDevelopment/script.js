@@ -1,0 +1,118 @@
+
+onLoad();
+function onLoad(){
+  addingCard()
+  mynavlink();
+  buttonHiding();
+  headerAnimation();
+}
+
+function addingCard() {
+  let mycards = document.querySelector(".cards1");
+  const cards = [
+    {
+      color: "blue",
+      heading: "IT Consultancy",
+      about:
+        "At our IT consultancy, we provide expert advice and guidance by focusing on the best practices for IT solutions and services.",
+    },
+    {
+      color: "#02ccba",
+      heading: "Managed IT",
+      about:
+        "Our managed IT services prioritize the best practices for IT solutions and services to ensure your systems run smoothly and efficiently.",
+    },
+    {
+      color: "#fff200",
+      heading: "IT Support",
+      about:
+        "Our IT support team is dedicated to providing the best possible service by focusing on the best practices for IT solutions and services.",
+    },
+    {
+      color: "#e74860",
+      heading: "Cloud computing",
+      about:
+        "We specialize in cloud computing solutions that adhere to the best practices for IT solutions and services, delivering reliable and secure access to your data.",
+    },
+    {
+      color: "#42545e",
+      heading: "Cyber security",
+      about:
+        "Protecting your business is our top priority, which is why we focus on the best practices for IT solutions and services to provide comprehensive cyber security solutions.",
+    },
+  ];
+  cards.forEach((element) => {
+    mycards.innerHTML += `<div class="card mycard" style="width: 20rem;  border-top: 6px solid #42545e;">
+    <div class="card-body">
+      <h4>${element.heading}</h4>
+      <p class="card-text">
+      ${element.about}
+      </p>
+    </div>
+  </div>`;
+  });
+}
+function buttonHiding() {
+  let mynavbtn = document.querySelector(".mynavbtn");
+  // console.log(mynavbtn);
+  let getInTouch = document.querySelector(".getInTouch");
+  mynavbtn.addEventListener("click", () => {
+    mynavbtn.style.backgroundColor = "#ff9047";
+  });
+  mynavbtn.addEventListener("mouseenter", () => {
+    getInTouch.style.display = "none";
+  });
+
+  mynavbtn.addEventListener("mouseleave", () => {
+    // Hide the element with id "getInTouch"
+    getInTouch.style.display = "block";
+  });
+}
+function mynavlink() {
+  let mynav_link = document.querySelector(".mynav-link");
+  let softwareServices1 = document.querySelector(".softwareServices1");
+
+  mynav_link.addEventListener("mouseenter", () => {
+    softwareServices1.style.display = "block";
+  });
+
+  mynav_link.addEventListener("mouseleave", () => {
+    softwareServices1.style.display = "none";
+  });
+
+  softwareServices1.addEventListener("mouseenter", () => {
+    softwareServices1.style.display = "block";
+  });
+  softwareServices1.addEventListener("mouseleave", () => {
+    softwareServices1.style.display = "none";
+  });
+  let mynav_link2 = document.querySelector(".mynav-link2");
+  let softwareServices2 = document.querySelector(".softwareServices2");
+
+  mynav_link2.addEventListener("mouseenter", () => {
+    softwareServices2.style.display = "block";
+  });
+
+  mynav_link2.addEventListener("mouseleave", () => {
+    softwareServices2.style.display = "none";
+  });
+
+  softwareServices2.addEventListener("mouseenter", () => {
+    softwareServices2.style.display = "block";
+  });
+  softwareServices2.addEventListener("mouseleave", () => {
+    softwareServices2.style.display = "none";
+  });
+}
+
+function headerAnimation() {
+  window.addEventListener("scroll", function () {
+    let header = document.getElementsByTagName("header")[0];
+    if (window.scrollY > 200) {
+      // Adjust the threshold as needed
+      header.style.top = "0px"; // Stick the header to the top of the viewport
+    } else {
+      header.style.top = "-200px"; // Move the header above the viewport
+    }
+  });
+}

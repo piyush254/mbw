@@ -2,7 +2,8 @@ onLoad();
 
 function onLoad() {
   buttonHandling();
-  headerSticky();
+  headerAnimation();
+  // headerSticky();
   mynavlink();
   buttonHiding();
   addingCard();
@@ -31,7 +32,6 @@ function buttonHandling() {
 function buttonHiding() {
   let mynavbtn = document.querySelector(".mybtn");
   let getInTouch = document.querySelector(".mygetspan");
-
   mynavbtn.addEventListener("click", () => {
     mynavbtn.style.backgroundColor = "#ff9047";
     console.log(1);
@@ -134,7 +134,7 @@ function addingCard() {
     },
   ];
   cards.forEach((element) => {
-    mycards.innerHTML += `  <div class="card mycard" style="width: 20rem;  border-top: 6px solid ${element.color};">
+    mycards.innerHTML += `<div class="card mycard" style="width: 20rem;  border-top: 6px solid ${element.color};">
     <div class="card-body">
       <h4>${element.heading}</h4>
       <p class="card-text">
@@ -215,5 +215,16 @@ function storysectionMaking() {
     <h3>${item.author}</h3>
     <h4>${item.role}</h4>
   </div>`;
+  });
+}
+function headerAnimation() {
+  window.addEventListener("scroll", function () {
+    let header = document.getElementsByTagName("header")[0];
+    if (window.scrollY > 200) {
+      // Adjust the threshold as needed
+      header.style.top = "0px"; // Stick the header to the top of the viewport
+    } else {
+      header.style.top = "-200px"; // Move the header above the viewport
+    }
   });
 }
