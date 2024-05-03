@@ -188,6 +188,7 @@ header {
   font-size: 4rem;
   box-sizing: border-box;
   color: white;
+  font-weight: 700;
   z-index: 2;
 }
 .herohome {
@@ -300,12 +301,14 @@ header {
   flex-wrap: wrap;
   width: 100%;
   /* background-color: black; */
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .mycard {
   border-radius: 0px;
   height: auto;
+  margin-top: 2%;
+  margin-right: 10px;
 }
 
 .Choose {
@@ -382,4 +385,32 @@ header {
 .rightChoseimage p{
   margin-top: 4vh;
   color: #fff;
+}
+
+.spanBlue, .spanRed{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 5px;
+}
+.spanBlue{
+  margin-left: 0px;
+  color: #051d41;
+}
+.spanRed{
+  color: #ff9049;
+}
+
+
+
+
+
+
+
+/* Media Screen Quary */
+
+
+@media screen and (max-width: 768px) {
+  .hero h1  {
+  font-size: 2rem;
+  }
 }

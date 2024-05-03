@@ -12,39 +12,45 @@ function addingCard() {
   const cards = [
     {
       color: "blue",
-      heading: "IT Consultancy",
+      heading: "Custom Enterprise",
+      heading1: "Software",
       about:
-        "At our IT consultancy, we provide expert advice and guidance by focusing on the best practices for IT solutions and services.",
+        "Develop and implement custom software solutions for large enterprises to improve productivity and streamline operations",
     },
     {
       color: "#02ccba",
-      heading: "Managed IT",
+      heading: "Cloud-Based",
+      heading1: "Solutions",
       about:
-        "Our managed IT services prioritize the best practices for IT solutions and services to ensure your systems run smoothly and efficiently.",
+        "Develop and integrate cloud-based software solutions for businesses that require flexibility and accessibility.",
     },
     {
       color: "#fff200",
-      heading: "IT Support",
+      heading: "Cloud-Based",
+      heading1: "Solutions",
       about:
-        "Our IT support team is dedicated to providing the best possible service by focusing on the best practices for IT solutions and services.",
+        "Develop and integrate cloud-based software solutions for businesses that require flexibility and accessibility.",
     },
     {
       color: "#e74860",
-      heading: "Cloud computing",
+      heading: "Cloud-Based",
+      heading1: "Solutions",
       about:
-        "We specialize in cloud computing solutions that adhere to the best practices for IT solutions and services, delivering reliable and secure access to your data.",
+        "Develop and integrate cloud-based software solutions for businesses that require flexibility and accessibility.",
     },
     {
       color: "#42545e",
-      heading: "Cyber security",
+      heading: "Cloud-Based",
+      heading1: "Solutions",
       about:
-        "Protecting your business is our top priority, which is why we focus on the best practices for IT solutions and services to provide comprehensive cyber security solutions.",
+        "Develop and integrate cloud-based software solutions for businesses that require flexibility and accessibility.",
     },
   ];
   cards.forEach((element) => {
-    mycards.innerHTML += `<div class="card mycard" style="width: 20rem;  border-top: 6px solid #42545e;">
+    mycards.innerHTML += `<div class="card mycard" style="width: 25rem;  border-top: 6px solid #42545e;">
     <div class="card-body">
-      <h4>${element.heading}</h4>
+      <h4></h4>
+      <span  class="spanBlue">${element.heading}</span><span  class="spanRed">${element.heading1}</span>
       <p class="card-text">
       ${element.about}
       </p>

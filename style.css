@@ -9,12 +9,11 @@
 header {
   z-index: 9;
   opacity: 1;
-  transition: all  10s ease-in;
+  transition: all 10s ease-in;
   position: sticky;
   top: 0;
   color: white;
-  transition: top .5s ease-out, top 1s ease-in;
-
+  transition: top 0.5s ease-out, top 1s ease-in;
 }
 .myul {
   padding: 5px 0px;
@@ -169,7 +168,7 @@ header {
   flex-wrap: wrap;
   background-color: rgb(228, 228, 228, 0.001);
 }
-.mycard {
+.mycard{
   margin-top: 10vh;
   margin-right: 20px;
   height: 200px;
@@ -189,7 +188,7 @@ header {
 
 .herodowndiv {
   background-color: #e4e4e4;
-  margin:5% 0% 0% 5% ;
+  margin: 5% 0% 0% 5%;
   height: 4px;
   width: 90%;
 }
@@ -538,18 +537,21 @@ header {
 }
 .storySection {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 footer {
   margin-top: 10vh;
+  box-sizing: border-box;
 }
 .footup {
   background-color: #ff9047;
-  height: 20vh;
+  height: auto;
   width: 100vw;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
@@ -608,15 +610,17 @@ footer {
 }
 
 .footdown {
-  height: 90vh;
+  height: auto;
   width: 100vw;
   box-sizing: border-box;
   padding-top: 7vh;
   background-color: #051d41;
+  padding-bottom: 7vh;
 }
 
 .footdownContainer {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 5vh;
   align-items: center;
   border-bottom: 1px solid #fff;
@@ -686,7 +690,7 @@ footer {
 footer h6 {
   color: white;
   text-align: center;
-  margin-top: 2.5%;
+  margin-top: 3%;
 }
 
 .hero video {
@@ -699,4 +703,18 @@ footer h6 {
 .glassicon {
   position: absolute;
   top: -5%;
+}
+
+/* Media Quary */
+@media screen and (max-width: 768px) {
+  .hero h3 {
+    font-size: 2rem;
+  }
+  .hero video {
+    max-width: 99vw;
+    opacity: 0.8;
+    z-index: -1;
+    height: auto;
+    position: absolute;
+  }
 }
