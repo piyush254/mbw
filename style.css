@@ -118,14 +118,14 @@ header {
 .hero h3 {
   text-align: center;
   margin-top: 10vh;
-  color: #fff;
+  color: #6f6e6e;
   font-size: 3rem;
   font-weight: 700;
 }
 
 .hero h5 {
   text-align: center;
-  margin-top: 30vh;
+  /* margin-top: 30vh; */
   color: #fff;
   font-size: 1.4rem;
   font-weight: 700;
@@ -135,9 +135,18 @@ header {
   margin-left: 40%;
 }
 
-.hero ul {
-  margin-top: 10vh;
+marquee{
+  width: 100%;
+  font-size: 4rem;
+  padding-left: 20%;
+  padding-right: 10%;
+  color: #ff9047;
+  font-weight: 800;
+  /* background-color: white; */
 }
+/* .hero ul {
+  margin-top: 10vh;
+} */
 .mygetspan {
   border: 1px solid #fff;
 }
@@ -716,5 +725,14 @@ footer h6 {
     z-index: -1;
     height: auto;
     position: absolute;
+  }
+  marquee{
+    width: 100%;
+    font-size: rem;
+    padding-left: 20%;
+    padding-right: 10%;
+    color: #ff9047;
+    font-weight: 700;
+    /* background-color: white; */
   }
 }
