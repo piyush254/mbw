@@ -135,7 +135,7 @@ header {
   margin-left: 40%;
 }
 
-marquee{
+marquee {
   width: 100%;
   font-size: 4rem;
   padding-left: 20%;
@@ -177,7 +177,7 @@ marquee{
   flex-wrap: wrap;
   background-color: rgb(228, 228, 228, 0.001);
 }
-.mycard{
+.mycard {
   margin-top: 10vh;
   margin-right: 20px;
   height: 200px;
@@ -726,7 +726,7 @@ footer h6 {
     height: auto;
     position: absolute;
   }
-  marquee{
+  marquee {
     width: 100%;
     font-size: rem;
     padding-left: 20%;
@@ -735,4 +735,29 @@ footer h6 {
     font-weight: 700;
     /* background-color: white; */
   }
+}
+
+img {
+  mix-blend-mode: multiply;
+  //filter: drop-shadow(10px 10px 10px #b4a8f7);
+}
+
+.Uparrow {
+  /* background-color: rgb(43, 228, 237); */
+  width: 30px;
+  height: 30px;
+  display: block;
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  text-align: center;
+  right: 20px;
+  border: 1px solid #8e8989;
+  mix-blend-mode: multiply;
+  color: black;
+  border-radius: 10px;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.Uparrow:hover {
+  box-shadow: 2px 2px 2px 2px #8b3333;
 }
