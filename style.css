@@ -739,11 +739,12 @@ footer h6 {
 
 img {
   mix-blend-mode: multiply;
-  //filter: drop-shadow(10px 10px 10px #b4a8f7);
+   /* filter: drop-shadow(10px 10px 10px #b4a8f7); */
 }
 
 .Uparrow {
   /* background-color: rgb(43, 228, 237); */
+  box-shadow: inset 0px 0px 5px 2px #131313;
   width: 30px;
   height: 30px;
   display: block;
@@ -753,11 +754,12 @@ img {
   text-align: center;
   right: 20px;
   border: 1px solid #8e8989;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   color: black;
   border-radius: 10px;
   transition: box-shadow 0.5s ease-in-out;
 }
 .Uparrow:hover {
-  box-shadow: 2px 2px 2px 2px #8b3333;
+  box-shadow:inset 0px 0px 5px 2px #131313,
+                   0px 0px 5px 2px #fff;
 }
